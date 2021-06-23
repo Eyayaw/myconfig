@@ -1,7 +1,7 @@
 
 # Set up bash prompt, .bashrc, .bashprofile using R
-trim_ws <- function(string) {
-gsub("[ ]{3,}", "", string)
+trim_ws <- function(str) {
+gsub("[ ]{3,}", "", str)
 }
 # create a nice looking bash/shell prompt
 .url = "https://raw.githubusercontent.com/mathiasbynens/dotfiles/main/.bash_prompt"
@@ -19,7 +19,7 @@ bashprompt = paste0(bashprompt, collapse = "\n")
 write(paste0(bashprompt, "\n\n", oldprompt), .path, append = FALSE)
 
 # create .bashrc
-system('echo "[ -n "$PS1" ] && source ~/.bash_profile;" >> ~/.bashrc')
+system('echo "[ -n "$PS1" ] && source ~/.bash_profile; echo source ~/.aliases" >> ~/.bashrc')
 
 # create .extra
 system(trim_ws(r"{echo '# Git credentials

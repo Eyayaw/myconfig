@@ -11,7 +11,7 @@ install.packages("data.table", type = "source",
 pkgs = c('ggplot2', 'dplyr', 'tidyr', 'tibble', 'rmarkdown', 'knitr', 'bookdown',
          'styler', 'usethis', 'readr', 'waldo', 'bookdown', 'datapasta', 'stringr',
          'haven', 'readxl',  'tinytex', 'sf', 'tmap', 'MASS', 'bit64', 'plm',
-         'sandwich', 'fixest', 'rvest')
+         'sandwich', 'fixest', 'rvest', 'poorman')
 pkgs = pkgs[!(pkgs %in% installed.packages()[, "Package"])]
 for (pkg in pkgs) {
   if (!requireNamespace(pkg))
