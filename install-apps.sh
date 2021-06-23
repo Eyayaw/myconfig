@@ -25,7 +25,7 @@ fi
 # Critical tools
 brew install --cask brave-browser
 brew install --cask firefox
-brew install --cask googlechrome
+brew install --cask homebrew/cask-versions/google-chrome-dev
 brew install --cask google-backup-and-sync
 brew install --cask zoom
 brew install --cask pdf-expert
@@ -33,11 +33,12 @@ brew install --cask Alfred
 brew install --cask dashlane
 brew install --cask flux
 brew install --cask microsoft-remote-desktop
+brew install --cask openconnect-gui
 
 # apple apps
-brew install --cask numbers
-brew install --cask pages
-brew install --cask keynote
+brew install --cask numbers #?
+brew install --cask pages   #?
+brew install --cask keynote #?
 xcode-select --install
 
 # zip/compress/unarchive
@@ -52,11 +53,11 @@ brew install --cask magnet # alternative: brew install --cask rectangle
 # terminal-cli utilites
 brew install --cask iterm2
 brew install fish
-
-
 brew install tldr
 # open or sneak into dir/files on the terminal
-brew tap willdoescode/homebrew-natls\n\nbrew install natls\n
+brew tap willdoescode/homebrew-natls 
+brew install natls
+
 # fonts
 brew tap homebrew/cask-fonts
 brew install --cask font-hasklug-nerd-font

@@ -1,6 +1,6 @@
 {
     "show_hidden_files": true,
-    "editor_theme": "Solarized Dark",
+    "editor_theme": "Tomorrow Night 80s",
     "save_workspace": "never",
     "load_workspace": false,
     "initial_working_directory": "~",
@@ -29,5 +29,8 @@
     "python_version": "3.8.2",
     "python_path": "/usr/bin/python3",
     "posix_terminal_shell": "custom",
-    "custom_shell_command": "/usr/local/bin/fish"
+    "custom_shell_command": "/usr/local/bin/fish",
+    "show_last_dot_value": true,
+    "jobs_tab_visibility": "shown",
+    "visual_markdown_editing_show_margin": true
 }
