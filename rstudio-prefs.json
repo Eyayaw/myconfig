@@ -1,6 +1,5 @@
 {
     "show_hidden_files": true,
-    "editor_theme": "Tomorrow Night 80s",
     "save_workspace": "never",
     "load_workspace": false,
     "initial_working_directory": "~",
@@ -9,7 +8,6 @@
     "insert_native_pipe_operator": true,
     "soft_wrap_r_files": true,
     "continue_comments_on_newline": true,
-    "focus_console_after_exec": true,
     "highlight_selected_line": true,
     "show_indent_guides": true,
     "scroll_past_end_of_document": true,
@@ -32,5 +30,36 @@
     "custom_shell_command": "/usr/local/bin/fish",
     "show_last_dot_value": true,
     "jobs_tab_visibility": "shown",
-    "visual_markdown_editing_show_margin": true
+    "visual_markdown_editing_show_margin": true,
+    "syntax_color_console": true,
+    "show_rmd_render_command": true,
+    "panes": {
+        "quadrants": [
+            "Source",
+            "TabSet2",
+            "TabSet1",
+            "Console"
+        ],
+        "tabSet1": [
+            "Environment",
+            "History",
+            "Connections",
+            "Build",
+            "VCS",
+            "Tutorial",
+            "Presentation"
+        ],
+        "tabSet2": [
+            "Files",
+            "Plots",
+            "Packages",
+            "Help",
+            "Viewer"
+        ],
+        "hiddenTabSet": [],
+        "console_left_on_top": false,
+        "console_right_on_top": false,
+        "additional_source_columns": 0
+    },
+    "focus_console_after_exec": true
 }
