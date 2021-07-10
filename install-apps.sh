@@ -34,6 +34,7 @@ brew install --cask dashlane
 brew install --cask flux
 brew install --cask microsoft-remote-desktop
 brew install --cask openconnect-gui
+brew install --cask zotero
 
 # apple apps
 brew install --cask numbers #?
