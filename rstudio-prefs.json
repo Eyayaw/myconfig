@@ -21,11 +21,11 @@
     "warn_variable_defined_but_not_used": true,
     "default_encoding": "UTF-8",
     "console_double_click_select": true,
-    "font_size_points": 16,
+    "font_size_points": 14,
     "rmd_viewer_type": "pane",
     "python_type": "system",
-    "python_version": "3.8.2",
-    "python_path": "/usr/bin/python3",
+    "python_version": "3.9.6",
+    "python_path": "/usr/local/bin/python3",
     "posix_terminal_shell": "custom",
     "custom_shell_command": "/usr/local/bin/fish",
     "show_last_dot_value": true,
@@ -58,8 +58,11 @@
         ],
         "hiddenTabSet": [],
         "console_left_on_top": false,
-        "console_right_on_top": false,
+        "console_right_on_top": true,
         "additional_source_columns": 0
     },
-    "focus_console_after_exec": true
+    "focus_console_after_exec": true,
+    "source_with_echo": true,
+    "editor_theme": "Solarized Dark",
+    "default_project_location": "~/sciebo/research/housing-market"
 }
