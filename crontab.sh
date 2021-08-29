@@ -9,11 +9,16 @@
 # * * * * *  command_to_execute
 
 
+# Recursively delete `.DS_Store` files
+#alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+
 
 ###### Sample crontab ######
+# rm .DS_Store every 30th min of everyday
+*/30 * * * * find . -type f -name '*.DS_Store' -ls -delete; echo "cleaning job executed @" $(date) #>> ~/Downloads/jobs.log
 
-# upgrade brew cask every Monday at 7pm
-45 19/20 * * 1,3,6 brew upgrade >> brew-upgrade.log
+# upgrade brew cask at 8 on Sunday and Thursday
+0 20 * * 0,4 brew upgrade; echo brew upgraded '@ $(date)' >> ~/Downloads/brew-upgrade.log
 
 # empty the temp folder every day of the week at 8:00AM
 0 8 * * * rm -rf /tmp/*

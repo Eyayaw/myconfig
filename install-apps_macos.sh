@@ -42,6 +42,9 @@ brew install --cask pages   #?
 brew install --cask keynote #?
 xcode-select --install
 
+# microsoft office 
+brew install --cask $(echo microsoft-{excel,word})
+
 # zip/compress/unarchive
 brew install --cask the-unarchiver
 # paid

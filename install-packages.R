@@ -10,8 +10,8 @@ install.packages("data.table", type = "source",
 ## other critical packages ------
 pkgs = c('ggplot2', 'dplyr', 'tidyr', 'tibble', 'rmarkdown', 'knitr', 'bookdown',
          'styler', 'usethis', 'readr', 'waldo', 'bookdown', 'datapasta', 'stringr',
-         'haven', 'readxl',  'tinytex', 'sf', 'tmap', 'MASS', 'bit64', 'plm',
-         'sandwich', 'fixest', 'rvest', 'poorman')
+         'haven', 'readxl',  'tinytex', 'sf', 'tmap', 'MASS', 'bit64','waldo',
+         'sandwich', 'fixest', 'rvest', 'poorman', 'fastverse', 'terra', 'kableExtra')
 pkgs = pkgs[!(pkgs %in% installed.packages()[, "Package"])]
 for (pkg in pkgs) {
   if (!requireNamespace(pkg))

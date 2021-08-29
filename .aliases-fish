@@ -2,12 +2,15 @@
 alias gd="cd ~/Google\ Drive"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias hm="cd ~/sciebo/housing-market/"
+alias hm="cd ~/sciebo/research/housing-market/"
 alias rs="cd ~/Documents/R-stuff"
 alias ps="cd ~/Documents/Python-stuff"
 alias df="cd ~/Documents/dotfiles"
 alias g="git"
-
+alias b="brew"
+alias jn="jupyter-notebook"
+alias python="python3"
+alias pip="pip3"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
