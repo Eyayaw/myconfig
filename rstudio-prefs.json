@@ -17,14 +17,13 @@
     "strip_trailing_whitespace": true,
     "auto_save_on_blur": true,
     "show_help_tooltip_on_idle": true,
-    "warn_if_no_such_variable_in_scope": true,
     "warn_variable_defined_but_not_used": true,
     "default_encoding": "UTF-8",
     "console_double_click_select": true,
     "font_size_points": 14,
     "rmd_viewer_type": "pane",
     "python_type": "system",
-    "python_version": "3.9.6",
+    "python_version": "3.9.7",
     "python_path": "/usr/local/bin/python3",
     "posix_terminal_shell": "custom",
     "custom_shell_command": "/usr/local/bin/fish",
@@ -33,6 +32,11 @@
     "visual_markdown_editing_show_margin": true,
     "syntax_color_console": true,
     "show_rmd_render_command": true,
+    "focus_console_after_exec": true,
+    "source_with_echo": true,
+    "default_project_location": "~/Downloads",
+    "save_files_before_build": true,
+    "editor_theme": "Tomorrow",
     "panes": {
         "quadrants": [
             "Source",
@@ -58,11 +62,10 @@
         ],
         "hiddenTabSet": [],
         "console_left_on_top": false,
-        "console_right_on_top": true,
+        "console_right_on_top": false,
         "additional_source_columns": 0
     },
-    "focus_console_after_exec": true,
-    "source_with_echo": true,
-    "editor_theme": "Solarized Dark",
-    "default_project_location": "~/sciebo/research/housing-market"
+    "check_unexpected_assignment_in_function_call": true,
+    "show_doc_outline_rmd": true,
+    "doc_outline_show": "sections_and_chunks"
 }
