@@ -1,21 +1,21 @@
-
 # Set up bash prompt, .bashrc, .bashprofile using R
 trim_ws <- function(str) {
-gsub("[ ]{3,}", "", str)
+  gsub("[ ]{3,}", "", str)
 }
+
 # create a nice looking bash/shell prompt
-.url = "https://raw.githubusercontent.com/mathiasbynens/dotfiles/main/.bash_prompt"
-.path = "~/.bash_prompt"
-oldprompt = if (file.exists(.path)) {
+.url <- "https://raw.githubusercontent.com/mathiasbynens/dotfiles/main/.bash_prompt"
+.path <- "~/.bash_prompt"
+oldprompt <- if (file.exists(.path)) {
   readLines(.path)
 } else {
   character(1)
 }
-bashprompt = readLines(.url)
-bashprompt = c(bashprompt[[1]], paste0("\n# Taken from ", .url), bashprompt[-1])
+bashprompt <- readLines(.url)
+bashprompt <- c(bashprompt[[1]], paste0("\n# Taken from ", .url), bashprompt[-1])
 
-oldprompt = paste0(c(paste0("# brought down from top of the file ", strrep("-", 25)), oldprompt), collapse = "\n")
-bashprompt = paste0(bashprompt, collapse = "\n")
+oldprompt <- paste0(c(paste0("# brought down from top of the file ", strrep("-", 25)), oldprompt), collapse = "\n")
+bashprompt <- paste0(bashprompt, collapse = "\n")
 write(paste0(bashprompt, "\n\n", oldprompt), .path, append = FALSE)
 
 # create .bashrc
@@ -83,7 +83,3 @@ system(trim_ws(r"{echo '# Add `~/bin` to the `$PATH`
 
        # Add `killall` tab completion for common apps
        complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;' >> ~/.bash_profile}"))
-
-
-
-

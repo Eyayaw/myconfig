@@ -1,6 +1,6 @@
 # Setting up R -----------
-trim_ws <- function(string) {
-        gsub("[ ]{3,}", "", string)
+trim_ws <- function(str) {
+       gsub("[ ]{3,}", "", str)
 }
 # mandatory tools according to cran
 ## https://mac.r-project.org/tools/
@@ -35,7 +35,7 @@ system("brew install gcc ccache cmake pkg-config autoconf automake")
 system("xcode-select --install")
 
 # step 2
-system('brew update && brew install llvm')
+system("brew update && brew install llvm")
 
 
 # For compilers to find libffi you may need to set:
@@ -53,7 +53,7 @@ system(trim_ws(r"{echo '# LLVM or _Low Level Virtual Machine _is a library that 
 export PATH="/usr/local/opt/llvm/bin:$PATH"' >> ~/.path}"))
 
 # step 3
-dir.create('~/.R')
+dir.create("~/.R")
 
 ## since I installed gcc with brew install gcc, this is what is needed!
 system(trim_ws(r"{echo 'VER=11  # set the version of brew gcc. (as of today: 11)
@@ -66,6 +66,6 @@ system(trim_ws(r"{echo 'VER=11  # set the version of brew gcc. (as of today: 11)
 
 # install rswitch
 
-system('cd ~/Downloads/;
+system("cd ~/Downloads/;
 	curl --remote-name https://rud.is/rswitch/releases/RSwitch-1.7.0.app.zip;
-	tar fxvz  RSwitch-1.7.0.app.zip -C /Applications')
+	tar fxvz  RSwitch-1.7.0.app.zip -C /Applications")

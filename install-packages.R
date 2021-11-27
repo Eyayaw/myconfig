@@ -13,15 +13,16 @@ install.packages("data.table",
 ## other critical packages ------
 pkgs <- c(
     "ggplot2", "dplyr", "tidyr", "tibble", "stringr",
-    "rvest", "readr", "waldo", "haven", "readxl", "usethis", "here",
+    "readr", "haven", "readxl", "waldo", "rvest", "usethis", "here",
     "rmarkdown", "knitr", "bookdown", "kableExtra", "tinytex",
-    "styler", "datapasta", "poorman", "fastverse", "MASS", "bit64",
-    "sandwich", "fixest", "terra",
-    "sf", "terra", "tmap", "exactextractr"
+    "lintr", "styler", "datapasta",
+    "MASS", "bit64", "poorman", "fastverse",
+    "ivreg", "sandwich", "fixest", "AER", "stargazer",
+    "sf", "terra", "stars", "tmap", "exactextractr",
+    "languageserver"
 )
+
 pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
 for (pkg in pkgs) {
-    if (!requireNamespace(pkg)) {
-          install.packages(pkg, character.only = TRUE)
-      }
+  install.packages(pkg, character.only = TRUE)
 }
