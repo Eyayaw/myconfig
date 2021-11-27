@@ -22,63 +22,40 @@ else
     brew update
 fi
 
-# Critical tools
-brew install --cask brave-browser
-brew install --cask firefox
-brew install --cask homebrew/cask-versions/google-chrome-dev
-brew install --cask google-backup-and-sync
-brew install --cask zoom
-brew install --cask pdf-expert
-brew install --cask Alfred
-brew install --cask dashlane
-brew install --cask flux
-brew install --cask microsoft-remote-desktop
-brew install --cask openconnect-gui
-brew install --cask zotero
-
-# apple apps
-brew install --cask numbers #?
-brew install --cask pages   #?
-brew install --cask keynote #?
-xcode-select --install
-
-# microsoft office 
-brew install --cask $(echo microsoft-{excel,word})
-
-# zip/compress/unarchive
-brew install --cask the-unarchiver
-# paid
-brew install --cask adguard adguard-vpn
-## brew install --cask gestimer # does not exist
-brew install --cask itsycal
-brew install --cask one-switch
-brew install --cask magnet # alternative: brew install --cask rectangle
-
 # terminal-cli utilites
 brew install --cask iterm2
-brew install fish
-brew install tldr
+brew install fish tldr
 # open or sneak into dir/files on the terminal
 brew tap willdoescode/homebrew-natls 
 brew install natls
 
-# fonts
-brew tap homebrew/cask-fonts
-brew install --cask font-hasklug-nerd-font
-brew install --cask \
-  font-fantasque-sans-mono font-fantasque-sans-mono-nerd-font font-noto-sans \
-  font-noto-serif font-noto-mono font-noto-mono-for-powerline font-noto-emoji \
-  font-hasklug-nerd-font font-anonymice-nerd-font font-meslo-lg-nerd-font \
-  font-fira-code font-fira-mono font-fira-sans font-fira-sans-condensed \
-  font-pt-mono font-pt-sans font-pt-sans-narrow font-pt-serif \
-  font-pt-sans-caption font-pt-serif-caption
+# Critical and premium tools
+brew install --cask brave-browser firefox
+brew install --cask homebrew/cask-versions/google-chrome-dev
+brew install --cask google-backup-and-sync
+brew install --cask zoom flux openconnect-gui
 
-# utilities
-brew install --cask dozer # hide iterms on the menu bar
+## brew install --cask gestimer # does not exist
+brew install --cask magnet # alternative: brew install --cask rectangle
+brew install --cask Alfred dashlane adguard adguard-vpn cleanmymac
+brew install --cask pdf-expert-beta zotero adobe-acrobat-reader
+brew install --cask mathpix-snipping-tool textsniper
+brew install --cask istat-menus cleanshot itsycal one-switch
+brew install --cask bartender # dozer # hide iterms on the menu bar
+
+brew install --cask the-unarchiver # zip/compress/unarchive
 brew install --cask wetransfer #?
 brew install --cask amphetamine # for keep mac awake
 brew install --cask keycastr # display key strokes
 brew install --cask alt-tab # windows-like tab switcher
+
+# apple apps
+brew install --cask numbers pages keynote #?
+xcode-select --install
+
+# microsoft
+brew install --cask $(echo microsoft-{excel,word,remote-desktop})
+
 
 # r and all that
 brew install --cask r
@@ -97,6 +74,15 @@ export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 brew install grep
 export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
 
-
 brew install youtube-dl
 brew install pigz # multithreaded compression
+
+# fonts
+brew tap homebrew/cask-fonts
+brew install --cask font-hasklug-nerd-font
+brew install --cask \
+  font-fantasque-sans-mono font-fantasque-sans-mono-nerd-font \
+  font-hasklug-nerd-font font-anonymice-nerd-font font-meslo-lg-nerd-font \
+  font-fira-code font-fira-mono font-fira-sans font-fira-sans-condensed \
+  font-pt-mono font-pt-sans font-pt-sans-narrow font-pt-serif \
+  font-pt-sans-caption font-pt-serif-caption
