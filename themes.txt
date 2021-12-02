@@ -1,0 +1,47 @@
+Antigua
+Apple Pips (dark)
+Bi-Darcula
+Chaos
+Chrome
+Clouds
+Clouds Midnigh
+Coal Graal
+Cobalt
+cobalt2
+Crimson Editor
+Dawn
+Dracula
+Dreamweaver
+Eclipse
+Gob
+Idle Fingers
+iPlastic
+Katzenmilch
+Kr Theme
+Material
+Material Dark
+Material Light
+Material Monokai
+Material-Solarized (dark)
+Material-Solarized (light)
+Merbivore
+Merbivore Soft
+Mono Industrial
+Monokai
+Paraíso (light)
+Pastel On Dark
+Solarized Darcula
+Solarized Dark
+Solarized Light
+SQL Server
+sunnyvale-theme
+SyntaxHighlighterReloaded
+Textmate (default)
+Tomorrow
+Tomorrow Night
+Tomorrow Night 80s
+Tomorrow Night Blue
+Tomorrow Night Bright
+Twilight
+Vibrant Ink
+Xcode
