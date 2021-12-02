@@ -64,6 +64,7 @@ brew install --cask rstudio
 echo "options('prompt = R> ')" >> ~/.Rprofile
 brew install --cask mactex
 
+brew install octave
 brew install --cask visual-studio-code
 brew install --cask anaconda
 brew install --cask pycharm-edu
