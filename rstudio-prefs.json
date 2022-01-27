@@ -23,7 +23,7 @@
     "font_size_points": 16,
     "rmd_viewer_type": "pane",
     "python_type": "system",
-    "python_version": "3.10.0",
+    "python_version": "3.9.10",
     "python_path": "/usr/local/bin/python3",
     "posix_terminal_shell": "custom",
     "custom_shell_command": "/usr/local/bin/fish",
@@ -57,7 +57,8 @@
             "Plots",
             "Packages",
             "Help",
-            "Viewer"
+            "Viewer",
+            "Presentations"
         ],
         "hiddenTabSet": [],
         "console_left_on_top": false,
@@ -67,5 +68,9 @@
     "check_unexpected_assignment_in_function_call": true,
     "show_doc_outline_rmd": true,
     "doc_outline_show": "sections_and_chunks",
-    "editor_theme": "Serendipity Dark {rsthemes}"
+    "always_save_history": false,
+    "rmd_chunk_output_inline": false,
+    "editor_theme": "Dracula",
+    "help_font_size_points": 11,
+    "limit_visible_console": true
 }

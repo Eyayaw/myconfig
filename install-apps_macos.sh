@@ -29,7 +29,7 @@ brew install fish tldr
 brew tap willdoescode/homebrew-natls 
 brew install natls
 
-# Critical and premium tools
+# Critical and premium tools ----
 brew install --cask brave-browser firefox
 brew install --cask homebrew/cask-versions/google-chrome-dev
 brew install --cask google-backup-and-sync
@@ -37,11 +37,12 @@ brew install --cask zoom flux openconnect-gui
 
 ## brew install --cask gestimer # does not exist
 brew install --cask magnet # alternative: brew install --cask rectangle
-brew install --cask Alfred dashlane adguard adguard-vpn cleanmymac
-brew install --cask pdf-expert-beta zotero adobe-acrobat-reader
+brew install --cask Alfred dashlane adguard adguard-vpn cleanmymac gemini hotspot-shield
+brew install --cask pdf-expert-beta zotero adobe-acrobat-reader standard-notes
 brew install --cask mathpix-snipping-tool textsniper
 brew install --cask istat-menus cleanshot itsycal one-switch
 brew install --cask bartender # dozer # hide iterms on the menu bar
+brew install --cask downie batteries folx
 
 brew install --cask the-unarchiver # zip/compress/unarchive
 brew install --cask wetransfer #?
@@ -80,10 +81,4 @@ brew install pigz # multithreaded compression
 
 # fonts
 brew tap homebrew/cask-fonts
-brew install --cask font-hasklug-nerd-font
-brew install --cask \
-  font-fantasque-sans-mono font-fantasque-sans-mono-nerd-font \
-  font-hasklug-nerd-font font-anonymice-nerd-font font-meslo-lg-nerd-font \
-  font-fira-code font-fira-mono font-fira-sans font-fira-sans-condensed \
-  font-pt-mono font-pt-sans font-pt-sans-narrow font-pt-serif \
-  font-pt-sans-caption font-pt-serif-caption
+brew install --cask font-hasklug-nerd-font font-meslo font-fira-code font-pt
