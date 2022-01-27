@@ -8,10 +8,15 @@ alias pstuff="cd ~/Documents/Python-stuff"
 alias dotf="cd ~/Documents/dotfiles"
 alias doc="Documents"
 
+alias b="brew"
+alias bi="b install"
+alias bic="b install --cask"
+alias bup="b update"
+
 alias R="R --no-save"
 alias r="radian"
+
 alias g="git"
-alias b="brew"
 # taken from Nathan https://github.com/nathaneastwood/git-setup/blob/master/.gitconfig
 alias s="git status --short --branch"
 alias changes="git diff --stat -r"
