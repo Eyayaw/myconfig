@@ -20,10 +20,10 @@
     "warn_variable_defined_but_not_used": true,
     "default_encoding": "UTF-8",
     "console_double_click_select": true,
-    "font_size_points": 16,
+    "font_size_points": 14,
     "rmd_viewer_type": "pane",
     "python_type": "system",
-    "python_version": "3.9.10",
+    "python_version": "3.9.12",
     "python_path": "/usr/local/bin/python3",
     "posix_terminal_shell": "custom",
     "custom_shell_command": "/usr/local/bin/fish",
@@ -32,16 +32,25 @@
     "visual_markdown_editing_show_margin": true,
     "syntax_color_console": true,
     "show_rmd_render_command": true,
-    "focus_console_after_exec": true,
-    "source_with_echo": true,
-    "default_project_location": "~/Downloads",
+    "default_project_location": "~/sciebo/research",
     "save_files_before_build": true,
+    "check_unexpected_assignment_in_function_call": true,
+    "show_doc_outline_rmd": true,
+    "doc_outline_show": "sections_and_chunks",
+    "help_font_size_points": 11,
+    "limit_visible_console": true,
+    "rmd_chunk_output_inline": false,
+    "check_arguments_to_r_function_calls": true,
+    "rmd_auto_date": true,
+    "document_author": "Eyayaw Beze",
+    "reduced_motion": true,
+    "visual_markdown_code_editor_line_numbers": true,
     "panes": {
         "quadrants": [
             "Source",
-            "Console",
             "TabSet1",
-            "TabSet2"
+            "TabSet2",
+            "Console"
         ],
         "tabSet1": [
             "Environment",
@@ -62,15 +71,8 @@
         ],
         "hiddenTabSet": [],
         "console_left_on_top": false,
-        "console_right_on_top": true,
+        "console_right_on_top": false,
         "additional_source_columns": 0
     },
-    "check_unexpected_assignment_in_function_call": true,
-    "show_doc_outline_rmd": true,
-    "doc_outline_show": "sections_and_chunks",
-    "always_save_history": false,
-    "rmd_chunk_output_inline": false,
-    "editor_theme": "Dracula",
-    "help_font_size_points": 11,
-    "limit_visible_console": true
+    "editor_theme": "Dracula"
 }

@@ -2,13 +2,15 @@
 
 ## install `data.table` with openmp support -----
 if ("data.table" %in% installed.packages()[, "Package"]) {
-  remove.packages("data.table")
+  if (data.table::getDTthreads() == 1L) {
+    remove.packages("data.table")
+    install.packages("data.table", type = "source",
+                     repos = "https://Rdatatable.gitlab.io/data.table")
+  }
+} else {
+  install.packages("data.table", type = "source",
+                   repos = "https://Rdatatable.gitlab.io/data.table")
 }
-install.packages("data.table",
-  type = "source",
-  repos = "https://Rdatatable.gitlab.io/data.table"
-)
-
 
 ## other critical packages ------
 pkgs <- c(
@@ -19,10 +21,15 @@ pkgs <- c(
   "MASS", "bit64", "poorman", "fastverse",
   "ivreg", "sandwich", "fixest", "AER", "stargazer",
   "sf", "terra", "stars", "tmap", "exactextractr",
-  "languageserver", "rsthemes"
+  "languageserver", "rsthemes", "cowplot", "patchwork"
 )
 
 pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
 for (pkg in pkgs) {
   install.packages(pkg, character.only = TRUE)
 }
+
+install.packages(
+  "rsthemes",
+  repos = c(gadenbuie = 'https://gadenbuie.r-universe.dev', getOption("repos"))
+)

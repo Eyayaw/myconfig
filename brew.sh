@@ -1,22 +1,30 @@
-# taken from https://raw.githubusercontent.com/mathiasbynens/dotfiles/main/.brew.sh
-
 #!/usr/bin/env bash
 
-# Install command-line tools using Homebrew.
+# taken from https://raw.githubusercontent.com/mathiasbynens/dotfiles/main/.brew.sh
 
-# Make sure we’re using the latest Homebrew.
-brew update
+sudo -v # ask password upfront
 
-# Upgrade any already-installed formulae.
-brew upgrade
+# Install Homebrew
+which -s brew
+if [[ $? != 0 ]] ; then
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+else
+    brew update
+fi
 
 # Save Homebrew’s installed location.
 BREW_PREFIX=$(brew --prefix)
+
+# Install command-line tools using Homebrew.
 
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
 ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+brew install grep
+export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
+
 
 # Install some other useful utilities like `sponge`.
 brew install moreutils

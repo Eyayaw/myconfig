@@ -1,0 +1,9 @@
+# download amharic keyboard
+
+keyman_url="https://downloads.keyman.com/mac/stable/14.0.276/keyman-14.0.276.dmg"
+bname=`basename $keyman_url`
+bname=`echo ~/Downloads/$bname`
+curl $keyman_url --output $bname
+
+# mount it
+sudo hdiutil attach $bname

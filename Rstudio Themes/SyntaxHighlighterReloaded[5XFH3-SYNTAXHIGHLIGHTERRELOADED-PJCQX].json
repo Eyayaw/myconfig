@@ -1,8 +1,0 @@
-{
-    "alfredsnippet" : {
-        "snippet" : "rstudioapi::applyTheme('SyntaxHighlighterReloaded')",
-        "uid" : "5XFH3-SYNTAXHIGHLIGHTERRELOADED-PJCQX",
-        "name" : "SyntaxHighlighterReloaded",
-        "keyword" : "syntax_highlighter_reloaded"
-    }
-}

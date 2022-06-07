@@ -2,16 +2,18 @@
 alias gd="cd ~/Google\ Drive"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias hm="cd ~/sciebo/research/housing-market/"
-alias rstuff="cd ~/Documents/R-stuff"
-alias pystuff="cd ~/Documents/Python-stuff"
-alias dotf="cd ~/Documents/dotfiles"
+alias hm="cd ~/sciebo/dissertation/housing-market/"
+alias rstuff="cd ~/Documents/Treasure/Programming/R-stuff"
+alias pystuff="cd ~/Documents/Treasure/Programming/Python-stuff"
+alias dotf="cd ~/Documents/Treasure/Setups/dotfiles"
 alias doc="Documents"
 
 alias b="brew"
 alias bi="b install"
 alias bic="b install --cask"
 alias bup="b update"
+alias bug="b upgrade"
+alias gbug="b upgrade --greedy"
 
 alias R="R --no-save --no-restore" 
 alias r="radian" 
@@ -26,7 +28,7 @@ alias untracked="git ls-files --others"
 alias python="python3"
 alias jn="jupyter-notebook"
 alias pip="pip3"
-
+alias ipython="python -m IPython"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

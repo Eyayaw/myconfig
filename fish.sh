@@ -6,6 +6,7 @@ brew update && brew upgrade fish
 echo '/usr/local/bin/fish' | sudo tee -a /etc/shells
 ## Change your default shell with
 chsh -s /usr/local/bin/fish
+# then, go to preferences -> Profiles -> General -> select Login shell in 'Command'
 # remove the greeting use:
 set -U fish_greeting
 
